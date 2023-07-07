@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather Data</title>
+</head>
+<body>
+  <h1>Weather Data</h1>
+  <ul>
+    <% @weather_data.each do |data| %>
+      <li><%= data.city %>: <%= data.temperature %></li>
+    <% end %>
+  </ul>
+  <form action="/weather_data/search" method="get">
+  <input type="text" name="query" placeholder="Search">
+  <input type="submit" value="Search">
+</form>
+</body>
+</html>
