@@ -1,4 +1,4 @@
-class WeatherData < ApplicationController
+class WeatherController < ApplicationController
     def index
       @weather_data = WeatherData.all
     end
